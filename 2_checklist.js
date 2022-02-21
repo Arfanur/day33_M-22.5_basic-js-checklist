@@ -190,3 +190,25 @@ console.log('');
 
 // 11. Write a function that takes three numbers numbers and returns the multiplication of the three numbers
 
+function multiplyThreeNum(para1, para2, para3) {
+    const multiply = para1 * para2 * para3;
+    return multiply;
+}
+const result = multiplyThreeNum(5, 10, 5);
+console.log(result);
+
+console.log('');
+
+// 12. Declare an object and change any property of that object
+
+let buyGift = {
+    name: 'Vanga Khat',
+    price: 38880,
+    quantity: 3
+};
+console.log(buyGift);
+buyGift.price = 40500;
+console.log(buyGift);
+
+console.log('');
+

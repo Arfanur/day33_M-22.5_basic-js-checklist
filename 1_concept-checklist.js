@@ -19,3 +19,5 @@
 // 10. you have an array of numbers. display only the number bigger than 80
 
 // 11. Write a function that takes three numbers numbers and returns the multiplication of the three numbers
+
+// 12. Declare an object and change any property of that object
