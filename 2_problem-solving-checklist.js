@@ -8,7 +8,8 @@ console.log('conversion to feetToInch :', resultInch);
 
 
 console.log('');
-// conversion centimeterToMeter
+
+// 2. conversion centimeterToMeter
 function centimeterToMeter(centimeter) {
     const meter = centimeter / 100;
     return meter;
@@ -55,5 +56,39 @@ console.log(pageCalculation);
 
 console.log('');
 
-// 4. friends
-// add
+// 4. friends name array
+// function name : bestFriend
+// figure out long name in that array
+
+
+function bestFriend(a) {
+    let largestName = a[0];
+    for (let name of a) {
+        if (name.length > largestName.length) {
+            largestName = name;
+        }
+    }
+    return largestName;
+}
+
+let friendsName = ['akash', 'batash', 'kakash', 'natash', 'talashes', 'kakases', 'muradses', 'dontIdiot', 'idiot', 'shohelIdiot6Number'];
+let largest = bestFriend(friendsName);
+console.log('largest name of friend :', largest);
+
+
+
+
+// let largestName = friendsName[0];
+
+// for (let name of friendsName) {
+//     if (name.length > largestName.length) {
+//         largestName = name;
+//     }
+// }
+// console.log('largest Name : ', largestName);
+
+
+
+
+// 5. will stop the loop if the array has any negative number and returns all the posithve number before the negative number
+// function name : onlyPositive
