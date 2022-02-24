@@ -152,11 +152,10 @@
 
 
 function largestElement(numbers) {
-    let largestCondition = 80;
     let largest = [];
     for (let element of numbers) {
         // console.log(i, element);
-        if (element > largestCondition) {
+        if (element > 80) {
             largest.push(element);
         }
     }
@@ -164,8 +163,10 @@ function largestElement(numbers) {
 }
 
 const num7 = [23, 38, 20, 37, 30289, 49, 51, 27, 61, 77, 289, 200, 1003];
-let largestArr = largestElement(num7);
-console.log(largestArr);
+console.log('largest number array:', largestElement(num7));
+
+// let largestArr = largestElement(num7);
+// console.log(largestArr);
 
 
 // let returnLarger = (arr, num) => arr.filter(n => n > num);

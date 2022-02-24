@@ -75,7 +75,7 @@ let friendsName = ['akash', 'batash', 'kakash', 'natash', 'talashes', 'kakases',
 let largest = bestFriend(friendsName);
 console.log('largest name of friend :', largest);
 
-
+console.log('');
 
 
 // let largestName = friendsName[0];
@@ -92,3 +92,21 @@ console.log('largest name of friend :', largest);
 
 // 5. will stop the loop if the array has any negative number and returns all the posithve number before the negative number
 // function name : onlyPositive
+
+let num8 = [10, 18, 22, 30, 2, 30, 28, 39, -38, -73, 38, -99, 333, -993];
+function onlyPositive(numbers) {
+    let positives = [];
+    for (let element of numbers) {
+        if (element < 0) {
+            break;
+        }
+        else if (element > 0) {
+            positives.push(element);
+        }
+    }
+    return positives;
+}
+console.log('positive numbers, before negetive number, Array:', onlyPositive(num8));
+
+// let positiveNumber = onlyPositive(num8);
+// console.log(positiveNumber);
