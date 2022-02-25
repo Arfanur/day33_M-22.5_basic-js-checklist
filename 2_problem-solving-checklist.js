@@ -4,10 +4,12 @@ function feetToInch(feet) {
     return inch;
 }
 const resultInch = feetToInch(1);
-console.log('conversion to feetToInch :', resultInch);
+// console.log('conversion to feetToInch :', resultInch);
+
+// console.log('');
 
 
-console.log('');
+
 
 // 2. conversion centimeterToMeter
 function centimeterToMeter(centimeter) {
@@ -15,10 +17,12 @@ function centimeterToMeter(centimeter) {
     return meter;
 }
 const resultMeter = centimeterToMeter(550);
-console.log('conversion to centimeterToMeter :', resultMeter);
+// console.log('conversion to centimeterToMeter :', resultMeter);
+
+// console.log('');
 
 
-console.log('');
+
 
 // 3. calculation
 //      pageRequirments
@@ -51,15 +55,16 @@ function pageRequirments(book1Quantity, book2Quantity, book3Quantity) {
 }
 
 const pageCalculation = pageRequirments(5, 7, 10);
-console.log(pageCalculation);
+// console.log(pageCalculation);
+
+// console.log('');
 
 
-console.log('');
+
 
 // 4. friends name array
 // function name : bestFriend
 // figure out long name in that array
-
 
 function bestFriend(a) {
     let largestName = a[0];
@@ -72,19 +77,21 @@ function bestFriend(a) {
 }
 
 let friendsName = ['akash', 'batash', 'kakash', 'natash', 'talashes', 'kakases', 'muradses', 'dontIdiot', 'idiot', 'shohelIdiot6Number'];
+
 let largest = bestFriend(friendsName);
-console.log('largest name of friend :', largest);
 
-console.log('');
+// console.log('largest name of friend :', largest);
+
+// console.log('');
 
 
-// let largestName = friendsName[0];
+let largestName = friendsName[0];
 
-// for (let name of friendsName) {
-//     if (name.length > largestName.length) {
-//         largestName = name;
-//     }
-// }
+for (let name of friendsName) {
+    if (name.length > largestName.length) {
+        largestName = name;
+    }
+}
 // console.log('largest Name : ', largestName);
 
 
@@ -108,5 +115,7 @@ function onlyPositive(numbers) {
 }
 console.log('positive numbers, before negetive number, Array:', onlyPositive(num8));
 
-// let positiveNumber = onlyPositive(num8);
-// console.log(positiveNumber);
+console.log('');
+
+let positiveNumber = onlyPositive(num8);
+console.log('positive number:', positiveNumber);
